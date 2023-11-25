@@ -1,0 +1,68 @@
+.parent {
+    display: flex;
+    align-items: center;
+    /* Set a minimum width to prevent content from getting too narrow */
+    min-width: 300px; 
+    background-color: rgb(165, 17, 219);
+    justify-content: center;
+
+}
+.left-box{
+    /*holds content*/
+    background-color: rgb(217, 215, 250);
+    margin: 20px;
+    width: 30vw;
+    height: 50vh;
+
+    /*Center left box*/
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+.right-box{
+    /*joke + image*/
+    background-color: rgb(217, 215, 250);
+    margin: 20px;
+    width: 30vw;
+    height: 50vh;
+
+    /*Center right box*/
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+.header {
+    text-align: center;
+
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    /* Apply transition effect to transform property */
+    transition: transform 0.2s ease-in-out; 
+  }
+
+  button:hover {
+    /* Increase scale on hover */
+    transform: scale(1.1); 
+    /* Change background color on hover */
+    background-color: #b9299f; 
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+  }
+
+  @media (max-width: 600px) {
+    .right-box {
+      width: 100%;
+    }
+  }
